@@ -1,0 +1,6 @@
+pagarmeapi:
+  baseUrl: https://api.pagar.me/1
+  key: ak_test_7WzgXqgcWm0KsvxldRR7aDFWBxw7Sb
+
+server:
+  address: :8080
