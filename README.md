@@ -21,7 +21,7 @@ server:
 #### Adicionar um evento de transação
 
 > Método: POST
-Endpoint: /v1/event
+> Endpoint: /v1/event
 
 - **Campos do corpo**:
   - **type**: tipo de transação para executar [_obrigatório_]
@@ -99,7 +99,7 @@ Endpoint: /v1/event
 #### Buscar balanço de uma conta
 
 > Método: GET
-Endpoint: /v1/balance?account_id={conta}
+> Endpoint: /v1/balance?account_id={conta}
 
 ##### Exemplo requisição:
 > GET /v1/balance?account_id=100
@@ -113,7 +113,7 @@ Endpoint: /v1/balance?account_id={conta}
 #### Resetar estado da API
 
 > Método: POST
-Endpoint: /v1/reset
+> Endpoint: /v1/reset
 
 ------------
 
