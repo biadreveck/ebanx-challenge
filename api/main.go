@@ -40,5 +40,5 @@ func main() {
 	_apiRouter.NewBalanceRouter(router, balanceUcase)
 	_apiRouter.NewResetRouter(router, resetUcase)
 
-	router.Run(viper.GetString("server.address"))
+	router.Run()
 }
