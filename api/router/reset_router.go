@@ -19,7 +19,7 @@ func NewResetRouter(router *gin.Engine, uc domainI.ResetUsecase) {
 
 	reset := router.Group("/v1/reset")
 	{
-		reset.GET("", resetRouter.PostReset)
+		reset.POST("", resetRouter.PostReset)
 	}
 }
 

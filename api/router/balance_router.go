@@ -37,5 +37,5 @@ func (r *BalanceRouter) GetBalance(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, balance)
+	c.JSON(http.StatusOK, balance.Balance)
 }

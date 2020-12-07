@@ -1,0 +1,1 @@
+web: ebanx.challenge
