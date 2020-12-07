@@ -17,7 +17,7 @@ func NewBalanceRouter(router *gin.Engine, uc domainI.BalanceUsecase) {
 		balanceUsecase: uc,
 	}
 
-	balance := router.Group("/v1/balance")
+	balance := router.Group("/balance")
 	{
 		balance.GET("", balanceRouter.GetBalance)
 	}

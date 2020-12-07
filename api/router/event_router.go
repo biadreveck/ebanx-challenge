@@ -19,7 +19,7 @@ func NewEventRouter(router *gin.Engine, uc domainI.EventUsecase) {
 		eventUsecase: uc,
 	}
 
-	event := router.Group("/v1/event")
+	event := router.Group("/event")
 	{
 		event.POST("", eventRouter.PostEvent)
 	}
