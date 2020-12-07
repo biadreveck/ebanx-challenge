@@ -25,5 +25,5 @@ func NewResetRouter(router *gin.Engine, uc domainI.ResetUsecase) {
 
 func (r *ResetRouter) PostReset(c *gin.Context) {
 	r.resetUsecase.Reset()
-	c.JSON(http.StatusOK, "OK")
+	c.String(http.StatusOK, "OK")
 }
