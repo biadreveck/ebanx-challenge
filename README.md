@@ -4,10 +4,12 @@ Este projeto é a implementação do desafio da Ebanx. Uma API para registro de 
 
 ### Ferramentas
 - Linguagem: [Go](https://golang.org/ "Go")
+- Criação de mocks: [mockery](https://github.com/vektra/mockery "mockery")
 
 ### Dependências
 - Gin (go get github.com/gin-gonic/gin)
 - Viper (go get github.com/spf13/viper)
+- Testify (go get github.com/stretchr/testify)
 
 ### Arquivo de configuração: *config.yml*
 Exemplo:
@@ -116,6 +118,10 @@ server:
 > Endpoint: /v1/reset
 
 ------------
+
+#### Host remoto
+
+https://ebanx-challenge.herokuapp.com
 
 #### Usando localmente:
 Para rodar a aplicação localmente é necessário executar os seguintes passos:
