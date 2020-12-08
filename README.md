@@ -115,7 +115,7 @@ server:
 #### Resetar estado da API
 
 > Método: POST
-> Endpoint: /v1/reset
+> Endpoint: /reset
 
 ------------
 
