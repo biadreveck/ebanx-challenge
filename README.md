@@ -23,7 +23,7 @@ server:
 #### Adicionar um evento de transação
 
 > Método: POST
-> Endpoint: /v1/event
+> Endpoint: /event
 
 - **Campos do corpo**:
   - **type**: tipo de transação para executar [_obrigatório_]
@@ -35,7 +35,7 @@ server:
   - **origin**: conta de destino da transação [obrigatório _se o campo "type" for "withdraw" ou "transfer"_]
 
 ##### Exemplo requisições:
-> POST /v1/event
+> POST /event
 ```json
 {
     "type": "deposit",
@@ -43,7 +43,7 @@ server:
     "amount": 10
 }
 ```
-> POST /v1/event
+> POST /event
 ```json
 {
     "type": "withdraw",
@@ -51,7 +51,7 @@ server:
     "amount": 5
 }
 ```
-> POST /v1/event
+> POST /event
 ```json
 {
     "type": "transfer",
@@ -101,10 +101,10 @@ server:
 #### Buscar balanço de uma conta
 
 > Método: GET
-> Endpoint: /v1/balance?account_id={conta}
+> Endpoint: /balance?account_id={conta}
 
 ##### Exemplo requisição:
-> GET /v1/balance?account_id=100
+> GET /balance?account_id=100
 
 ##### Exemplo resposta:
 > 200 - OK
